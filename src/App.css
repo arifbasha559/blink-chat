@@ -1,0 +1,15 @@
+@import url('https://fonts.cdnfonts.com/css/college-sans');
+@import url('https://fonts.cdnfonts.com/css/roboto');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.font-moon{
+    font-family: 'College Sans', sans-serif;
+   
+  }
