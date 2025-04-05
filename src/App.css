@@ -1,15 +1,74 @@
 @import url('https://fonts.cdnfonts.com/css/college-sans');
 @import url('https://fonts.cdnfonts.com/css/roboto');
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
 }
-body{
+
+body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
-.font-moon{
+
+.font-moon {
     font-family: 'College Sans', sans-serif;
-   
-  }
+
+}
+
+.background {
+
+
+    background-image: radial-gradient(rgba(0, 0, 0, 0.31) 2px, transparent 0);
+    background-size: 30px 30px;
+    background-position: -5px -5px;
+
+}
+
+.message {
+    margin-top: 20px;
+}
+
+.response {
+    text-align: start;
+    display: flex;
+    gap: 20px;
+}
+
+.request {
+    display: flex;
+    align-self: flex-end;
+    text-align: end;
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+
+.msg {
+    background-color: aquamarine;
+    width: fit-content;
+    font-family: 'College Sans', sans-serif;
+    font-size: 20px;
+    /* color: white; */
+    padding: 10px 20px;
+    border-radius: 10px;
+    position: relative;
+}
+.msg::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    width: 10px;
+    height: 10px;
+    background-color:inherit ;
+    
+}
+
+.response> .msg::before{
+    left: -5px;
+
+}
+.request> .msg::before{
+    right: -5px;    
+    
+}

@@ -7,14 +7,10 @@ const App = () => {
   return (
     <Router>
     <div className="">
-      <nav className="flex gap-4 mb-4">
-        <Link to="/" className="text-blue-500">Home</Link>
-        <Link to="/about" className="text-blue-500">About</Link>
-        <Link to="/contact" className="text-blue-500">Contact</Link>
-      </nav>
+     
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<Auth />} />
+        <Route path="/auth" element={<Auth />} />
       </Routes>
     </div>
   </Router>
